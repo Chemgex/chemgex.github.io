@@ -16,9 +16,30 @@
       background-color: #003d72;
       padding: 20px;
       text-align: center;
-      font-size: 24px;
       color: white;
       font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      width: 150px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     main {
@@ -63,21 +84,25 @@
 </head>
 <body>
   <header>
-    Chemgex - Empowering the Future of Clean Energy
+    <img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ae875720-dba6-4f49-8dfe-12ab28f3676c/Chemgex%E6%BA%90%E6%96%87%E4%BB%B6-01.png" alt="Chemgex Logo">
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
   </header>
 
   <main>
     <h1>Welcome to Chemgex</h1>
     <p>Chemgex is a pioneering technology company specializing in the integration of battery technology, hydrogen solutions, and data science to revolutionize the energy sector. Our mission is to deliver innovative, sustainable, and efficient energy solutions that support the transition to a cleaner and greener future.</p>
 
-    <h2>Our Services</h2>
+    <h2 id="services">Our Services</h2>
     <ul>
       <li>Battery and Hydrogen Solutions</li>
       <li>Data Science Integration</li>
       <li>Consulting and Technical Support</li>
     </ul>
 
-    <h2>Contact Us</h2>
+    <h2 id="contact">Contact Us</h2>
     <p>For more information about our services and solutions, feel free to get in touch with us at <a href="mailto:info@chemgex.com">info@chemgex.com</a>.</p>
   </main>
 </body>
